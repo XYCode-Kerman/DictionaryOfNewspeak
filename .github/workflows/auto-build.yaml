@@ -16,7 +16,11 @@ jobs:
           latexmk_use_xelatex: true
           extra_fonts: |
             ./fonts/*.ttf
+            ./fonts/*.TTF
             ./fonts/*.ttc
+            ./fonts/*.TTC
+            ./fonts/*.otf
+            ./fonts/*.OTF
       
       - uses: actions/upload-artifact@v4
         with:
